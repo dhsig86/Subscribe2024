@@ -1,0 +1,112 @@
+/* Estilo global para centralizar todos os títulos h1 e h2 */
+h1, h2 {
+    text-align: center;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .slogan{
+    text-align:center;
+
+  }
+  /* Seus estilos de container e card */
+  .pricing-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite que os cartões se ajustem conforme o tamanho da tela */
+    gap: 10px; /* Espaço entre os cartões */
+  }
+  
+  /* Estilo para os cartões */
+.pricing-card {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    position: relative;
+  }
+  
+  /* Cores de fundo para cada cartão */
+  .mensal .pricing-card {
+    background-color: #ffcccc; /* Vermelho claro */
+  }
+  
+  .anual .pricing-card {
+    background-color: #ccefff; /* Azul claro */
+  }
+  
+  .medicos .pricing-card {
+    background-color: #ccffcc; /* Verde claro */
+  }
+  
+  /* Estilo para a tag "Poupança" */
+  .tag {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #4caf50; /* Verde escuro para economia */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.8em;
+  }
+  
+  /* Estilo para o título do plano */
+  .pricing-card h3 {
+    margin-top: 0;
+  }
+  .pricing-card h3 {
+    color: #1a53ff;
+  }
+  
+  .price {
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  
+  .features {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .features li {
+    margin-bottom: 5px;
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #1a53ff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .payment-link {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .popular {
+    background: #ffcc00;
+  }
+  
+  .saving {
+    background: #4caf50;
+    display: block;
+  }
+  
+  .advantages {
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  /* Adaptações para telas menores */
+  @media (max-width: 768px) {
+    .pricing-card {
+      min-width: 200px; /* Ajuste a largura mínima conforme necessário */
+    }
+  }
